@@ -4,6 +4,13 @@ This repository provides a reference implementation of Shapley Weighting (SW) fr
 
 This repository does not aim to reproduce the full MIMIC IV, MIMIC III, or eICU experimental pipeline reported in the paper. Those datasets require credentialed access and the full study uses a larger preprocessing and evaluation setup.
 
+## Method at a glance
+
+The following figure summarizes the key difference between Shapley Filtering and Shapley Weighting. Shapley Filtering removes samples with negative estimated contribution, while Shapley Weighting retains all samples and adjusts influence through rank based weights.
+
+![Shapley Filtering vs Shapley Weighting](figures/fig1_method_comparison.png)
+
+
 ## Environment
 
 The recommended setup uses conda with Python 3.9.
